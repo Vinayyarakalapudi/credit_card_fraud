@@ -1,0 +1,138 @@
+# CREDIT CARD FRAUD DETECTION — OUTPUT LOG
+
+## STEP 1 — LOAD DATA
+
+Dataset Path:
+C:\Users\DELL\Downloads\credit_card_fraud_detection\data\raw\creditcard.csv
+
+Total Rows    : 284,807
+Total Columns : 31
+
+Class Distribution:
+
+* Fraud Transactions : 492 (0.173%)
+* Legit Transactions : 284,315
+
+---
+
+## STEP 2 — PREPROCESSING
+
+Removed duplicate/null rows : 1,081
+Remaining rows              : 283,726
+
+Scaled Columns:
+
+* Time
+* Amount
+
+Train-Test Split:
+
+* Training Size : 226,980
+* Testing Size  : 56,746
+
+Fraud Distribution:
+
+* Train Fraud : 378
+* Test Fraud  : 95
+
+Saved:
+
+* Scaler → models/scaler.pkl
+* Processed Data → data/processed/processed_data.csv
+
+---
+
+## STEP 3 — FEATURE ENGINEERING & BALANCING
+
+New Features Added:
+
+* Amount_log
+* Amount_bin
+* Hour
+* Is_Night
+
+SMOTE Applied:
+
+* Fraud Before : 378
+* Fraud After  : 67,980
+* Total Samples: 294,582
+
+---
+
+## STEP 4 — MODEL TRAINING
+
+LOGISTIC REGRESSION
+AUC-ROC : 0.9673
+F1-Score: 0.0976
+
+DECISION TREE
+AUC-ROC : 0.8539
+F1-Score: 0.1486
+
+RANDOM FOREST (BEST MODEL)
+AUC-ROC : 0.9821
+F1-Score: 0.6816
+
+XGBOOST
+AUC-ROC : 0.9777
+F1-Score: 0.4954
+
+LIGHTGBM
+AUC-ROC : 0.9778
+F1-Score: 0.6148
+
+Best Model Selected:
+→ Random Forest
+
+Saved Models:
+
+* logistic_regression.pkl
+* decision_tree.pkl
+* random_forest.pkl
+* xgboost.pkl
+* lightgbm.pkl
+* best_model.pkl
+
+---
+
+## STEP 5 — FINAL EVALUATION (RANDOM FOREST)
+
+AUC-ROC  : 0.9821
+PR-AUC   : 0.7879
+F1-Score : 0.6816
+MCC      : 0.6886
+
+Performance:
+
+* Fraud Recall : ~80%
+* Fraud Precision : ~59%
+
+Saved Reports:
+
+* Confusion Matrix
+* ROC Curve
+* Precision-Recall Curve
+* Model Comparison Graph
+
+Location:
+reports/figures/
+
+---
+
+# PIPELINE SUMMARY
+
+Best Model  : Random Forest
+AUC-ROC     : 0.9821
+F1-Score    : 0.6816
+MCC         : 0.6886
+Total Time  : ~160 seconds
+
+Artifacts Generated:
+
+* models/best_model.pkl
+* models/scaler.pkl
+* reports/figures/*.png
+
+============================================================
+END OF OUTPUT
+=============
