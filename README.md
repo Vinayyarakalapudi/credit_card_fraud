@@ -1,10 +1,10 @@
-# 💳 Credit Card Fraud Detection
+# Credit Card Fraud Detection
 
 A complete end-to-end machine learning project to detect fraudulent credit card transactions using various ML algorithms, with full data preprocessing, feature engineering, model training, evaluation, and deployment-ready code.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 credit_card_fraud_detection/
@@ -37,7 +37,7 @@ credit_card_fraud_detection/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone / Download & Navigate
 
@@ -84,7 +84,7 @@ jupyter notebook notebooks/01_EDA_and_Modeling.ipynb
 
 ---
 
-## 🧠 ML Pipeline Overview
+##  ML Pipeline Overview
 
 ```
 Raw Data → EDA → Preprocessing → Feature Engineering
@@ -96,7 +96,7 @@ Raw Data → EDA → Preprocessing → Feature Engineering
 
 ---
 
-## 📊 Models Implemented
+## Models Implemented
 
 | Model | Description |
 |-------|-------------|
@@ -108,7 +108,7 @@ Raw Data → EDA → Preprocessing → Feature Engineering
 
 ---
 
-## 📈 Evaluation Metrics
+## Evaluation Metrics
 
 Since the dataset is highly imbalanced (~0.17% fraud), we focus on:
 
@@ -120,7 +120,7 @@ Since the dataset is highly imbalanced (~0.17% fraud), we focus on:
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 Edit `config.py` to control:
 
@@ -132,7 +132,7 @@ Edit `config.py` to control:
 
 ---
 
-## 🧪 Run Tests
+## Run Tests
 
 ```bash
 python -m pytest tests/ -v
@@ -140,7 +140,7 @@ python -m pytest tests/ -v
 
 ---
 
-## 📦 Dataset Info
+## Dataset Info
 
 The [Kaggle dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) contains:
 - **284,807 transactions** over 2 days
@@ -150,7 +150,7 @@ The [Kaggle dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) co
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Python 3.8+
 - Scikit-learn
@@ -162,7 +162,7 @@ The [Kaggle dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) co
 
 ---
 
-## 📌 Results (Typical on Kaggle Dataset)
+## Results (Typical on Kaggle Dataset)
 
 | Model | AUC-ROC | F1-Score |
 |-------|---------|----------|
@@ -173,12 +173,9 @@ The [Kaggle dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) co
 
 ---
 
-## 👤 Author
+## Author
 
 Built from scratch as a complete ML project for fraud detection.
 
 ---
 
-## 📜 License
-
-MIT License — free to use, modify, and distribute.
