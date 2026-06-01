@@ -133,9 +133,9 @@ def train_all_models(X_train, y_train, X_test, y_test):
     best_model = results[best_name]["model"]
 
     joblib.dump(best_model, BEST_MODEL_PATH)
-    print(f"\n[Train] ✓ Best model : {best_name} "
+    print(f"\n[Train]  Best model : {best_name} "
           f"(AUC={results[best_name]['auc']:.4f})")
-    print(f"[Train] ✓ Saved best → {BEST_MODEL_PATH}")
+    print(f"[Train]  Saved best → {BEST_MODEL_PATH}")
 
     return results, best_name, best_model
 
