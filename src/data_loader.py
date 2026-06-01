@@ -10,11 +10,6 @@ import os
 import numpy as np
 import pandas as pd
 
-import sys
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-from config import RAW_CSV, RANDOM_STATE, SYNTHETIC_ROWS
-
-
 # ─── Public API ───────────────────────────────────────────────────────────────
 
 def load_data(csv_path: str = RAW_CSV) -> pd.DataFrame:
